@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1100"
+   LastUpgradeVersion = "1240"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "66B135153215A9FD2153CE975D29DD44"
-               BuildableName = "Pods_0527_dynamicTableView.framework"
-               BlueprintName = "Pods-0527_dynamicTableView"
-               ReferencedContainer = "container:Pods.xcodeproj">
+               BlueprintIdentifier = "125F5BD0265F6BF30032252F"
+               BuildableName = "0527_dynamicTableView.app"
+               BlueprintName = "0527_dynamicTableView"
+               ReferencedContainer = "container:0527_dynamicTableView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,6 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "125F5BD0265F6BF30032252F"
+            BuildableName = "0527_dynamicTableView.app"
+            BlueprintName = "0527_dynamicTableView"
+            ReferencedContainer = "container:0527_dynamicTableView.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -47,6 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "125F5BD0265F6BF30032252F"
+            BuildableName = "0527_dynamicTableView.app"
+            BlueprintName = "0527_dynamicTableView"
+            ReferencedContainer = "container:0527_dynamicTableView.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
