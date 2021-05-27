@@ -13,9 +13,11 @@
 		125F5BDC265F6BF30032252F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125F5BDA265F6BF30032252F /* Main.storyboard */; };
 		125F5BDE265F6BF40032252F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 125F5BDD265F6BF40032252F /* Assets.xcassets */; };
 		125F5BE1265F6BF40032252F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125F5BDF265F6BF40032252F /* LaunchScreen.storyboard */; };
+		4B63F164523788AE15681793 /* Pods_0527_dynamicTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FFE11D49401E19D20DCF23 /* Pods_0527_dynamicTableView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		09A362BDC7BC5A1A7DF3B16F /* Pods-0527_dynamicTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-0527_dynamicTableView.release.xcconfig"; path = "Target Support Files/Pods-0527_dynamicTableView/Pods-0527_dynamicTableView.release.xcconfig"; sourceTree = "<group>"; };
 		125F5BD1265F6BF30032252F /* 0527_dynamicTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 0527_dynamicTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		125F5BD4265F6BF30032252F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		125F5BD6265F6BF30032252F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		125F5BDD265F6BF40032252F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		125F5BE0265F6BF40032252F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		125F5BE2265F6BF40032252F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		499D8F82E29E700CF82ECF35 /* Pods-0527_dynamicTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-0527_dynamicTableView.debug.xcconfig"; path = "Target Support Files/Pods-0527_dynamicTableView/Pods-0527_dynamicTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		C9FFE11D49401E19D20DCF23 /* Pods_0527_dynamicTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_0527_dynamicTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B63F164523788AE15681793 /* Pods_0527_dynamicTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				125F5BD3265F6BF30032252F /* 0527_dynamicTableView */,
 				125F5BD2265F6BF30032252F /* Products */,
+				DC1B86BF7F5D856292F3494F /* Pods */,
+				1460A7BF520F307E0078BD4D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = 0527_dynamicTableView;
 			sourceTree = "<group>";
 		};
+		1460A7BF520F307E0078BD4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9FFE11D49401E19D20DCF23 /* Pods_0527_dynamicTableView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC1B86BF7F5D856292F3494F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				499D8F82E29E700CF82ECF35 /* Pods-0527_dynamicTableView.debug.xcconfig */,
+				09A362BDC7BC5A1A7DF3B16F /* Pods-0527_dynamicTableView.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 125F5BE5265F6BF40032252F /* Build configuration list for PBXNativeTarget "0527_dynamicTableView" */;
 			buildPhases = (
+				39B502966DF278D0A5A28D93 /* [CP] Check Pods Manifest.lock */,
 				125F5BCD265F6BF30032252F /* Sources */,
 				125F5BCE265F6BF30032252F /* Frameworks */,
 				125F5BCF265F6BF30032252F /* Resources */,
+				A81861544B1FC18011CF5F6C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39B502966DF278D0A5A28D93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-0527_dynamicTableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A81861544B1FC18011CF5F6C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-0527_dynamicTableView/Pods-0527_dynamicTableView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-0527_dynamicTableView/Pods-0527_dynamicTableView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-0527_dynamicTableView/Pods-0527_dynamicTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		125F5BCD265F6BF30032252F /* Sources */ = {
@@ -283,6 +352,7 @@
 		};
 		125F5BE6265F6BF40032252F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 499D8F82E29E700CF82ECF35 /* Pods-0527_dynamicTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +371,7 @@
 		};
 		125F5BE7265F6BF40032252F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09A362BDC7BC5A1A7DF3B16F /* Pods-0527_dynamicTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
