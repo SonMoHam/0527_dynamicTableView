@@ -7,12 +7,29 @@
 
 import Foundation
 import UIKit
+import SwipeCellKit
 
-class MyTableViewCell: UITableViewCell {
+class MyTableViewCell: SwipeTableViewCell {
     
     @IBOutlet weak var userProfileImg: UIImageView!
     
     @IBOutlet weak var userContentLabel: UILabel!
+    
+    @IBOutlet weak var heartBtn: UIButton!
+    @IBOutlet weak var thumbsUpBtn: UIButton!
+    
+    // 피드 데이터
+    var feedData: Feed? {
+        didSet{
+            print("MyTableViewCell - didSet / feedData: \(String(describing: feedData))")
+            
+            if let data = feedData {
+                heartBtn.tintColor = data.isFavorite ? #colorLiteral(red: 0.9098039269, green: 0.4784313738, blue: 0.6431372762, alpha: 1) : .systemGray
+                thumbsUpBtn.tintColor = data.isThumbsUp ? #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1) : .systemGray
+                userContentLabel.text = data.content
+            }
+        }
+    }
     
     // 셀이 렌더링 될 때
     override func awakeFromNib() {
