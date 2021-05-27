@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		125F5BDC265F6BF30032252F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125F5BDA265F6BF30032252F /* Main.storyboard */; };
 		125F5BDE265F6BF40032252F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 125F5BDD265F6BF40032252F /* Assets.xcassets */; };
 		125F5BE1265F6BF40032252F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125F5BDF265F6BF40032252F /* LaunchScreen.storyboard */; };
+		125F5BEB265F76C70032252F /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 125F5BEA265F76C70032252F /* MyTableViewCell.xib */; };
 		4B63F164523788AE15681793 /* Pods_0527_dynamicTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FFE11D49401E19D20DCF23 /* Pods_0527_dynamicTableView.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		125F5BDD265F6BF40032252F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		125F5BE0265F6BF40032252F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		125F5BE2265F6BF40032252F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		125F5BEA265F76C70032252F /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		499D8F82E29E700CF82ECF35 /* Pods-0527_dynamicTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-0527_dynamicTableView.debug.xcconfig"; path = "Target Support Files/Pods-0527_dynamicTableView/Pods-0527_dynamicTableView.debug.xcconfig"; sourceTree = "<group>"; };
 		C9FFE11D49401E19D20DCF23 /* Pods_0527_dynamicTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_0527_dynamicTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 				125F5BDD265F6BF40032252F /* Assets.xcassets */,
 				125F5BDF265F6BF40032252F /* LaunchScreen.storyboard */,
 				125F5BE2265F6BF40032252F /* Info.plist */,
+				125F5BEA265F76C70032252F /* MyTableViewCell.xib */,
 			);
 			path = 0527_dynamicTableView;
 			sourceTree = "<group>";
@@ -88,7 +91,6 @@
 				499D8F82E29E700CF82ECF35 /* Pods-0527_dynamicTableView.debug.xcconfig */,
 				09A362BDC7BC5A1A7DF3B16F /* Pods-0527_dynamicTableView.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -152,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				125F5BE1265F6BF40032252F /* LaunchScreen.storyboard in Resources */,
+				125F5BEB265F76C70032252F /* MyTableViewCell.xib in Resources */,
 				125F5BDE265F6BF40032252F /* Assets.xcassets in Resources */,
 				125F5BDC265F6BF30032252F /* Main.storyboard in Resources */,
 			);
