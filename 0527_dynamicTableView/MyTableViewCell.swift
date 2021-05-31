@@ -27,11 +27,6 @@ class MyTableViewCell: SwipeTableViewCell {
     var feedData: Feed? {
         didSet{
             print("MyTableViewCell - didSet / feedData: \(String(describing: feedData))")
-            
-            if let data = feedData {
-                
-                
-            }
         }
     }
     
@@ -41,6 +36,7 @@ class MyTableViewCell: SwipeTableViewCell {
         print("MyTableViewCell - awakeFromNib() called")
         
         userProfileImg.layer.cornerRadius = userProfileImg.frame.width / 2
+        btns.forEach{ $0.addTarget(self, action: #selector(onBtnClicked(_:)), for: .touchUpInside)}
     }
     
     func updateUI(with data: Feed) {
@@ -49,5 +45,20 @@ class MyTableViewCell: SwipeTableViewCell {
         heartBtn.setState(data.isFavorite)
         thumbsUpBtn.tintColor = data.isThumbsUp ? #colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1) : #colorLiteral(red: 0.8039215686, green: 0.8039215686, blue: 0.8039215686, alpha: 1)
         userContentLabel.text = data.content
+    }
+    
+    @objc fileprivate func onBtnClicked(_ sender: UIButton) {
+        switch sender {
+        case heartBtn:
+            print("하트 버튼 클릭")
+            heartBtnAction?(heartBtn.isActivated)
+        case thumbsUpBtn:
+            print("좋아요 버튼 클릭")
+        case shareBtn:
+            print("공유하기 버튼 클릭")
+        default:
+            break
+        
+        }
     }
 }
