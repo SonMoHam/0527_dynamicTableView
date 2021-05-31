@@ -84,7 +84,8 @@ extension ViewController: UITableViewDataSource {
         
         // 데이터 UI 연결
         if self.contentArray.count > 0 {
-            cell.feedData = contentArray[indexPath.row]
+            let cellData = contentArray[indexPath.row]
+            cell.updateUI(with: cellData)
         }
         
         return cell

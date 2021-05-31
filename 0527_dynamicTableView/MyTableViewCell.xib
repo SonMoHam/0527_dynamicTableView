@@ -41,41 +41,53 @@
                         </subviews>
                     </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlH-FH-F8A">
-                        <rect key="frame" x="8" y="66" width="398" height="143"/>
+                        <rect key="frame" x="8" y="66" width="398" height="130"/>
                         <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gL2-PF-oJC">
-                        <rect key="frame" x="8" y="217" width="70" height="20"/>
+                        <rect key="frame" x="8" y="204" width="130" height="40"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2j-4K-T2b">
-                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a2j-4K-T2b" customClass="MyHeartBtn" customModule="_527_dynamicTableView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="IHa-uJ-zW7"/>
-                                    <constraint firstAttribute="width" constant="20" id="etU-oj-VFl"/>
+                                    <constraint firstAttribute="height" constant="40" id="IHa-uJ-zW7"/>
+                                    <constraint firstAttribute="width" constant="40" id="etU-oj-VFl"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemGrayColor"/>
-                                <state key="normal" title="Button" image="heart.fill" catalog="system"/>
+                                <state key="normal" title="Button" image="heart" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Suq-pa-ndn">
-                                <rect key="frame" x="25" y="0.0" width="20" height="20"/>
+                                <rect key="frame" x="45" y="0.0" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="nGH-qe-hOy"/>
-                                    <constraint firstAttribute="width" constant="20" id="wBZ-cm-tTl"/>
+                                    <constraint firstAttribute="height" constant="40" id="nGH-qe-hOy"/>
+                                    <constraint firstAttribute="width" constant="40" id="wBZ-cm-tTl"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemGrayColor"/>
-                                <state key="normal" title="Button" image="hand.thumbsup.fill" catalog="system"/>
+                                <state key="normal" title="Button" image="hand.thumbsup.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZf-Je-hdR">
-                                <rect key="frame" x="50" y="0.0" width="20" height="20"/>
+                                <rect key="frame" x="90" y="0.0" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="uRv-EI-JSx"/>
-                                    <constraint firstAttribute="width" constant="20" id="yUg-KL-eHL"/>
+                                    <constraint firstAttribute="height" constant="40" id="uRv-EI-JSx"/>
+                                    <constraint firstAttribute="width" constant="40" id="yUg-KL-eHL"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemGrayColor"/>
-                                <state key="normal" title="Button" image="arrowshape.turn.up.forward.fill" catalog="system"/>
+                                <state key="normal" title="Button" image="arrowshape.turn.up.forward.fill" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
                             </button>
                         </subviews>
                     </stackView>
@@ -90,15 +102,19 @@
                     <constraint firstItem="9CY-yA-Lde" firstAttribute="leading" secondItem="K0w-Fe-3wY" secondAttribute="leading" constant="8" id="qWh-mR-yBp"/>
                     <constraint firstItem="9CY-yA-Lde" firstAttribute="top" secondItem="K0w-Fe-3wY" secondAttribute="top" constant="8" id="sQp-fN-WFM"/>
                     <constraint firstItem="gL2-PF-oJC" firstAttribute="top" secondItem="qlH-FH-F8A" secondAttribute="bottom" constant="8" id="vYM-Za-BAK"/>
-                    <constraint firstAttribute="bottom" secondItem="gL2-PF-oJC" secondAttribute="bottom" constant="15" id="yDi-VT-eCZ"/>
+                    <constraint firstAttribute="bottom" secondItem="gL2-PF-oJC" secondAttribute="bottom" constant="8" id="yDi-VT-eCZ"/>
                     <constraint firstItem="qlH-FH-F8A" firstAttribute="leading" secondItem="9CY-yA-Lde" secondAttribute="leading" id="zsK-WP-tvG"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
                 <outlet property="heartBtn" destination="a2j-4K-T2b" id="idw-0b-auU"/>
+                <outlet property="shareBtn" destination="uZf-Je-hdR" id="JLb-3N-bfY"/>
                 <outlet property="thumbsUpBtn" destination="Suq-pa-ndn" id="pOa-cT-yLi"/>
                 <outlet property="userContentLabel" destination="qlH-FH-F8A" id="AY2-If-9HJ"/>
                 <outlet property="userProfileImg" destination="9CY-yA-Lde" id="YZb-6q-wZi"/>
+                <outletCollection property="btns" destination="a2j-4K-T2b" collectionClass="NSMutableArray" id="rHx-eg-bj5"/>
+                <outletCollection property="btns" destination="Suq-pa-ndn" collectionClass="NSMutableArray" id="19n-Ow-IfD"/>
+                <outletCollection property="btns" destination="uZf-Je-hdR" collectionClass="NSMutableArray" id="2T8-XD-JA4"/>
             </connections>
             <point key="canvasLocation" x="343.47826086956525" y="174.10714285714286"/>
         </tableViewCell>
@@ -107,7 +123,7 @@
         <image name="arrowshape.turn.up.forward.fill" catalog="system" width="128" height="106"/>
         <image name="dog" width="484" height="360"/>
         <image name="hand.thumbsup.fill" catalog="system" width="128" height="121"/>
-        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
