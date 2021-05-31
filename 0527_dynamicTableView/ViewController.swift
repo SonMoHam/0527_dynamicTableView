@@ -91,7 +91,7 @@ extension ViewController: UITableViewDataSource {
         cell.heartBtnAction = { [weak self] currentBtnState in
             guard let self = self else { return }
             self.contentArray[indexPath.row].isFavorite = !currentBtnState
-            self.myTableView.reloadRows(at: [indexPath], with: .automatic)
+//            self.myTableView.reloadRows(at: [indexPath], with: .automatic)
         }
         
         return cell
